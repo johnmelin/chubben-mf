@@ -1,0 +1,71 @@
+.chubben-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+
+  padding: var(--spacing-md);
+
+  gap: var(--spacing-md);
+}
+
+.chubben-logo {
+  justify-self: start;
+  display: flex;
+}
+
+.chubben-title {
+  margin: 0;
+}
+
+.version {
+  justify-self: end;
+  margin: 0;
+}
+
+.right-container {
+  display: flex;
+  height: 100%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 180px;
+  list-style-type: none;
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-lg);
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--color-primary);
+}
+
+.sidenav li:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-secondary);
+}
+
+li a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+
+  color: var(--color-text);
+}
+
+li a.selected {
+  font-weight: bolder;
+
+  color: var(--color-text);
+}
+
+.page-container {
+  padding: var(--spacing-xl);
+  width: 100%;
+}
