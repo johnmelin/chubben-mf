@@ -7,13 +7,6 @@ export const registry = {
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
       exposedModule: './web-components',
     }),
-  mfe3: () =>
-    loadRemoteModule({
-      type: 'script',
-      remoteEntry: 'http://localhost:4203/remoteEntry.js',
-      remoteName: 'mfe3',
-      exposedModule: './web-components',
-    }),
   computas: () =>
     loadRemoteModule({
       type: 'script',

@@ -23,11 +23,6 @@ import { NavigationComponent } from './navigation/navigation.component';
           },
         },
         {
-          matcher: startsWith('mfe3'),
-          component: WrapperComponent,
-          data: { importName: 'mfe3', elementName: 'mfe3-element' },
-        },
-        {
           matcher: startsWith('computas'),
           component: WrapperComponent,
           data: { importName: 'computas', elementName: 'computas-element' },
