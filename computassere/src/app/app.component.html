@@ -1,10 +1,7 @@
 <header>
   <h1 class="information-header">Computassere</h1>
   <p class="version">
-    <img
-      src="https://angular.io/assets/images/logos/angular/angular.svg"
-      width="24"
-    />
+    <img src="assets/angular.svg" width="24" height="24" />
     Version: {{ ngVersion }}
   </p>
 </header>
@@ -25,4 +22,10 @@
   </svg>
 </div>
 
-<router-outlet></router-outlet>
+<ul class="computasser-list">
+  <li *ngFor="let computasser of computassere">
+    <img src="{{ computasser.imgUrl }}" />
+    <strong>{{ computasser.name }}</strong>
+    <small>{{ computasser.department }}</small>
+  </li>
+</ul>

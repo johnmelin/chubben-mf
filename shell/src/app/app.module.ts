@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { startsWith } from './router.utils';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -13,7 +12,6 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     RouterModule.forRoot(
       [
-        { path: '', component: HomeComponent, pathMatch: 'full' },
         {
           matcher: startsWith('computassere'),
           component: WrapperComponent,

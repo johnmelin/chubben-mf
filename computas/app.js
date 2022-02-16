@@ -10,10 +10,7 @@ class App extends React.Component {
         <header>
           <h1 className="information-header">Computas</h1>
           <p className="version">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-              width="24"
-            />
+            <img src="assets/React-icon.svg" width="24" height="24" />
             Version: {reactVersion}
           </p>
         </header>

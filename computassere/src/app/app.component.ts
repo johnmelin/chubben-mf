@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 import { Computasser, computassere } from './computassere';
 
 declare const require: any;
@@ -9,15 +8,8 @@ declare const require: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   ngVersion = require('../../package.json').dependencies['@angular/core'];
 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {
-    this.router.navigateByUrl(location.pathname.substr(1));
-    window.addEventListener('popstate', () => {
-      this.router.navigateByUrl(location.pathname.substr(1));
-    });
-  }
+  readonly computassere: Computasser[] = computassere;
 }
