@@ -15,10 +15,9 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       library: { type: "module" },
-
       remotes: {
-        // // React: loaded as script file
         computas: "script computas@http://localhost:4204/remoteEntry.js",
+        karriere: "script karriere@http://localhost:8082/remoteEntry.js",
       },
       shared: ["@angular/core", "@angular/common", "@angular/router"],
     }),

@@ -27,6 +27,11 @@ import { NavigationComponent } from './navigation/navigation.component';
           component: WrapperComponent,
           data: { importName: 'computas', elementName: 'computas-element' },
         },
+        {
+          matcher: startsWith('karriere'),
+          component: WrapperComponent,
+          data: { importName: 'karriere', elementName: 'karriere-element' },
+        },
       ],
       { relativeLinkResolution: 'legacy' }
     ),

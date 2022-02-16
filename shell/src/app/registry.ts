@@ -14,4 +14,11 @@ export const registry = {
       remoteName: 'computas',
       exposedModule: './web-components',
     }),
+  karriere: () =>
+    loadRemoteModule({
+      type: 'script',
+      remoteEntry: 'http://localhost:8082/remoteEntry.js',
+      remoteName: 'karriere',
+      exposedModule: './web-components',
+    }),
 };
