@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna exec npm install",
+    "start": "lerna run start --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

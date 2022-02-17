@@ -7,9 +7,9 @@
 
 ## Start and Run
 
-Run npm install and start in each folder (shell, computas-react, computassere-anuglar, karrierevei-vue and min-side-svelte)
+In root (chubben-mf) folder
 
-1. `npm install` -- Install packages
-2. `npm start` -- Start server
+1. `npm run bootstrap` -- Install dependencies in all packages
+2. `npm start` -- Start server for all packages
 
 Open a browser and navigate to `http://localhost:4200` to see the app running and access all the micro frontends within.

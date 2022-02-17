@@ -1,0 +1,11 @@
+{
+  "npmClient": "npm",
+  "packages": [
+    "shell",
+    "karrierevei-vue",
+    "computassere-angular",
+    "computas-react",
+    "min-side-svelte"
+  ],
+  "version": "0.0.0"
+}
