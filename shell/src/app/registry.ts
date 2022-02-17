@@ -21,4 +21,12 @@ export const registry = {
       remoteName: 'karriere',
       exposedModule: './web-components',
     }),
+  minside: () =>
+    loadRemoteModule({
+      type: 'script',
+      remoteEntry: 'http://localhost:4208/remoteEntry.js',
+      remoteName: 'minside',
+      exposedModule: './web-components',
+    }),
+
 };

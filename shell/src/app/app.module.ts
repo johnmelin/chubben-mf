@@ -30,6 +30,11 @@ import { NavigationComponent } from './navigation/navigation.component';
           component: WrapperComponent,
           data: { importName: 'karriere', elementName: 'karriere-element' },
         },
+        {
+          matcher: startsWith('minside'),
+          component: WrapperComponent,
+          data: { importName: 'minside', elementName: 'minside-element' },
+        },
       ],
       { relativeLinkResolution: 'legacy' }
     ),

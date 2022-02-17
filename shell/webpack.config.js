@@ -3,14 +3,14 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 module.exports = {
   output: {
     publicPath: "auto",
-    uniqueName: "shell",
+    uniqueName: "shell"
   },
   optimization: {
     // Only needed to bypass a temporary bug
-    runtimeChunk: false,
+    runtimeChunk: false
   },
   experiments: {
-    outputModule: true,
+    outputModule: true
   },
   plugins: [
     new ModuleFederationPlugin({
@@ -18,8 +18,9 @@ module.exports = {
       remotes: {
         computas: "script computas@http://localhost:4204/remoteEntry.js",
         karriere: "script karriere@http://localhost:8082/remoteEntry.js",
+        minside: "script minside@http://localhost:4208/remoteEntry.js",
       },
       shared: ["@angular/core", "@angular/common", "@angular/router"],
-    }),
-  ],
+    })
+  ]
 };
